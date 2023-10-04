@@ -1,0 +1,151 @@
+:root {
+    --dimension: 1.56%;
+    --color: black;
+
+}
+
+
+* {
+    box-sizing: border-box;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(137, 207, 240) ;
+}
+
+header {
+    text-align: center;
+    margin: 2rem 0;
+    
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.menu {
+    
+    border-radius: 5px  ;
+    width: 15rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+    
+    
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    list-style-type: none;
+
+    width:10rem;
+    height: 70%;
+    margin-top: 3rem;
+    
+}
+
+
+
+.grids{
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    width: 35rem;
+    height:35rem;
+    box-shadow: -1px 1px 8px 5px rgba(0,0,0,0.14);
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    
+    
+    
+
+}
+
+.grids * { 
+    
+    
+   
+    flex-grow: 1;
+    
+    
+   
+    
+}
+
+.box {
+    width:var(--dimension);
+    background-color:white;
+   
+}
+
+.erase:hover {
+    background-color: white;
+}
+
+#colorwheel{
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width:65px;
+    height:65px;
+    appearance: none;
+    border: none;   
+    cursor: pointer;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+#colorwheel::-webkit-color-swatch{
+    border-radius: 15px;
+    border:none;
+    box-shadow: -1px 1px 14px 5px rgba(0,0,0,0.24) ;
+}
+
+#colorwheel:hover {
+    transform: scale(110%);
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+    background-color: azure;
+    font-size: 17px;
+    padding: 10px ;
+    width: 100px;
+    text-align: center;
+    
+}
+
+button:hover {
+    background-color:rgb(212, 85, 80) ;
+    transform: scale(110%);
+    color: white;
+    transition: 0.2s;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+
+.active {
+    background-color: rgb(212, 85, 80);
+    transform: scale(110%);
+    color: white;
+}
+
+ 
+
+
