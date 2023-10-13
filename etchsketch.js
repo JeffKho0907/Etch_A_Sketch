@@ -119,3 +119,8 @@ dimension.addEventListener('mousemove', (e)=> {
 })
 
 colorwheel.addEventListener('change', (e)=> {currentColor = e.target.value;});
+
+
+document.addEventListener('dragstart', function(e) {
+    e.preventDefault();
+});

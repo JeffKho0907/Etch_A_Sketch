@@ -6,6 +6,7 @@
 
 
 * {
+    user-select: none;
     box-sizing: border-box;
     color: black;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -63,6 +64,7 @@ main {
 
 
 .grids{
+    
     margin-right: 3rem;
     margin-bottom: 3rem;
     width: 35rem;
